@@ -14,6 +14,8 @@
 		293FDD6A29AFADAA0035DB3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293FDD6829AFADAA0035DB3B /* LaunchScreen.storyboard */; };
 		293FDD7529AFAE170035DB3B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7429AFAE170035DB3B /* Category.swift */; };
 		293FDD7729AFB0630035DB3B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7629AFB0630035DB3B /* Meal.swift */; };
+		293FDD7A29AFB1AC0035DB3B /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7929AFB1AC0035DB3B /* MealService.swift */; };
+		293FDD7D29AFB2E90035DB3B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7C29AFB2E90035DB3B /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		293FDD6B29AFADAA0035DB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		293FDD7429AFAE170035DB3B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		293FDD7629AFB0630035DB3B /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		293FDD7929AFB1AC0035DB3B /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
+		293FDD7C29AFB2E90035DB3B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				293FDD7329AFAE0C0035DB3B /* Model */,
+				293FDD7829AFB19B0035DB3B /* Networking */,
+				293FDD7B29AFB2D40035DB3B /* Helper + Extensions */,
 				293FDD7129AFADE20035DB3B /* Supporting Files */,
 				293FDD7229AFADF60035DB3B /* Storyboards */,
 			);
@@ -92,6 +98,22 @@
 				293FDD7629AFB0630035DB3B /* Meal.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		293FDD7829AFB19B0035DB3B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				293FDD7929AFB1AC0035DB3B /* MealService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		293FDD7B29AFB2D40035DB3B /* Helper + Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				293FDD7C29AFB2E90035DB3B /* NetworkError.swift */,
+			);
+			path = "Helper + Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +190,8 @@
 				293FDD7729AFB0630035DB3B /* Meal.swift in Sources */,
 				293FDD5E29AFADA80035DB3B /* AppDelegate.swift in Sources */,
 				293FDD7529AFAE170035DB3B /* Category.swift in Sources */,
+				293FDD7D29AFB2E90035DB3B /* NetworkError.swift in Sources */,
+				293FDD7A29AFB1AC0035DB3B /* MealService.swift in Sources */,
 				293FDD6029AFADA80035DB3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
