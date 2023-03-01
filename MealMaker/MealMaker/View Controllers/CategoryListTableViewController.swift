@@ -41,6 +41,7 @@ class CategoryListTableViewController: UITableViewController {
         config.textProperties.font          = UIFont.systemFont(ofSize: 20, weight: .bold)
         config.secondaryText                = category.categoryDescription
         config.secondaryTextProperties.font = UIFont.systemFont(ofSize: 14, weight: .light)
+        config.secondaryTextProperties.numberOfLines = 3
         cell.contentConfiguration = config
     }
     
@@ -64,6 +65,11 @@ class CategoryListTableViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        if segue.identifier == "toMealListTableVC" {
+            guard let indexPath = tableView.indexPathForSelectedRow,
+                  let destinationVC = segue.destination as? MealListTableViewController else { return }
+            let category = categoryArray[indexPath.row]
+            destinationVC.category = category
+        }
     }
 }

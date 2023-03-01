@@ -24,7 +24,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="TZX-DG-C5z" kind="show" id="gP4-2A-z8C"/>
+                                    <segue destination="TZX-DG-C5z" kind="show" identifier="toMealListTableVC" id="gP4-2A-z8C"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
