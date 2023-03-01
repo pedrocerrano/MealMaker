@@ -17,6 +17,8 @@
 		293FDD7A29AFB1AC0035DB3B /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7929AFB1AC0035DB3B /* MealService.swift */; };
 		293FDD7D29AFB2E90035DB3B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7C29AFB2E90035DB3B /* NetworkError.swift */; };
 		293FDD7F29AFB4830035DB3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7E29AFB4830035DB3B /* Constants.swift */; };
+		293FDD8229AFC1AA0035DB3B /* CategoryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD8129AFC1AA0035DB3B /* CategoryListTableViewController.swift */; };
+		293FDD8429AFC1B40035DB3B /* MealListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD8329AFC1B40035DB3B /* MealListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		293FDD7929AFB1AC0035DB3B /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
 		293FDD7C29AFB2E90035DB3B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		293FDD7E29AFB4830035DB3B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		293FDD8129AFC1AA0035DB3B /* CategoryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListTableViewController.swift; sourceTree = "<group>"; };
+		293FDD8329AFC1B40035DB3B /* MealListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			children = (
 				293FDD7329AFAE0C0035DB3B /* Model */,
 				293FDD7829AFB19B0035DB3B /* Networking */,
+				293FDD8029AFC1880035DB3B /* View Controllers */,
 				293FDD7B29AFB2D40035DB3B /* Helper + Extensions */,
 				293FDD7129AFADE20035DB3B /* Supporting Files */,
 				293FDD7229AFADF60035DB3B /* Storyboards */,
@@ -117,6 +122,15 @@
 				293FDD7E29AFB4830035DB3B /* Constants.swift */,
 			);
 			path = "Helper + Extensions";
+			sourceTree = "<group>";
+		};
+		293FDD8029AFC1880035DB3B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				293FDD8129AFC1AA0035DB3B /* CategoryListTableViewController.swift */,
+				293FDD8329AFC1B40035DB3B /* MealListTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +205,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				293FDD7729AFB0630035DB3B /* Meal.swift in Sources */,
+				293FDD8229AFC1AA0035DB3B /* CategoryListTableViewController.swift in Sources */,
 				293FDD5E29AFADA80035DB3B /* AppDelegate.swift in Sources */,
+				293FDD8429AFC1B40035DB3B /* MealListTableViewController.swift in Sources */,
 				293FDD7529AFAE170035DB3B /* Category.swift in Sources */,
 				293FDD7D29AFB2E90035DB3B /* NetworkError.swift in Sources */,
 				293FDD7F29AFB4830035DB3B /* Constants.swift in Sources */,
