@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+struct MealTopLevelDictionary: Decodable {
+    let meals: [Meal]
+}
+
+struct Meal: Decodable {
+    private enum CodingKeys: String, CodingKey {
+        case mealName       = "strMeal"
+        case mealImageURL   = "strMealThumb"
+        case mealID         = "idMeal"
+    }
+    
+    let mealName: String
+    let mealImageURL: String
+    let mealID: String
+}

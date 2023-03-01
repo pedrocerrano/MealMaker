@@ -12,7 +12,8 @@
 		293FDD6529AFADA80035DB3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293FDD6329AFADA80035DB3B /* Main.storyboard */; };
 		293FDD6729AFADAA0035DB3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293FDD6629AFADAA0035DB3B /* Assets.xcassets */; };
 		293FDD6A29AFADAA0035DB3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293FDD6829AFADAA0035DB3B /* LaunchScreen.storyboard */; };
-		293FDD7529AFAE170035DB3B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7429AFAE170035DB3B /* Meal.swift */; };
+		293FDD7529AFAE170035DB3B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7429AFAE170035DB3B /* Category.swift */; };
+		293FDD7729AFB0630035DB3B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7629AFB0630035DB3B /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		293FDD6629AFADAA0035DB3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		293FDD6929AFADAA0035DB3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		293FDD6B29AFADAA0035DB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		293FDD7429AFAE170035DB3B /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		293FDD7429AFAE170035DB3B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		293FDD7629AFB0630035DB3B /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +88,8 @@
 		293FDD7329AFAE0C0035DB3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				293FDD7429AFAE170035DB3B /* Meal.swift */,
+				293FDD7429AFAE170035DB3B /* Category.swift */,
+				293FDD7629AFB0630035DB3B /* Meal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,8 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293FDD7729AFB0630035DB3B /* Meal.swift in Sources */,
 				293FDD5E29AFADA80035DB3B /* AppDelegate.swift in Sources */,
-				293FDD7529AFAE170035DB3B /* Meal.swift in Sources */,
+				293FDD7529AFAE170035DB3B /* Category.swift in Sources */,
 				293FDD6029AFADA80035DB3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
