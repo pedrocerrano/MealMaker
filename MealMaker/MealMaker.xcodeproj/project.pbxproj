@@ -19,6 +19,7 @@
 		293FDD7F29AFB4830035DB3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD7E29AFB4830035DB3B /* Constants.swift */; };
 		293FDD8229AFC1AA0035DB3B /* CategoryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD8129AFC1AA0035DB3B /* CategoryListTableViewController.swift */; };
 		293FDD8429AFC1B40035DB3B /* MealListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD8329AFC1B40035DB3B /* MealListTableViewController.swift */; };
+		293FDD8629AFD08A0035DB3B /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FDD8529AFD08A0035DB3B /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		293FDD7E29AFB4830035DB3B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		293FDD8129AFC1AA0035DB3B /* CategoryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListTableViewController.swift; sourceTree = "<group>"; };
 		293FDD8329AFC1B40035DB3B /* MealListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListTableViewController.swift; sourceTree = "<group>"; };
+		293FDD8529AFD08A0035DB3B /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				293FDD7429AFAE170035DB3B /* Category.swift */,
 				293FDD7629AFB0630035DB3B /* Meal.swift */,
+				293FDD8529AFD08A0035DB3B /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				293FDD7F29AFB4830035DB3B /* Constants.swift in Sources */,
 				293FDD7A29AFB1AC0035DB3B /* MealService.swift in Sources */,
 				293FDD6029AFADA80035DB3B /* SceneDelegate.swift in Sources */,
+				293FDD8629AFD08A0035DB3B /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

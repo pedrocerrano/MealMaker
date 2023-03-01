@@ -33,6 +33,7 @@ struct MealService {
         }.resume()
     }
     
+    
     static func fetchMealsInCategory(forCategory category: Category, completion: @escaping (Result<[Meal], NetworkError>) -> Void) {
         guard let baseURL         = URL(string: Constants.MealService.mealsInCategoryBaseURL) else { completion(.failure(.invalidURL)) ; return }
         var urlComponents         = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
@@ -60,6 +61,40 @@ struct MealService {
                 completion(.failure(.unableToDecode))
             }
         }.resume()
+    }
     
+    
+    static func fetchRecipe(forMeal meal: Meal, completion: @escaping (Result<Recipe, NetworkError>) -> Void) {
+        guard let baseURL = URL(string: Constants.MealService.fetchRecipeBaseURL) else { completion(.failure(.invalidURL)) ; return }
+        var urlComponents           = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
+        let recipeQueryItem         = URLQueryItem(name: Constants.MealService.recipeQueryKey, value: meal.mealID)
+        urlComponents?.queryItems   = [recipeQueryItem]
+        
+        guard let finalURL = urlComponents?.url else { completion(.failure(.invalidURL)) ; return }
+        print("fetchRecipe Final URL: \(finalURL)")
+        
+        URLSession.shared.dataTask(with: finalURL) { data, response, error in
+            if let error = error {
+                completion(.failure(.thrownError(error)))
+                return
+            }
+            
+            if let response = response as? HTTPURLResponse {
+                print("fetchRecipe Response Status Code: \(response.statusCode)")
+            }
+            
+            guard let data = data else { completion(.failure(.noData)) ; return }
+            do {
+                let topLevel = try JSONDecoder().decode(RecipeTopLevelDictionary.self, from: data)
+                if let recipe = topLevel.meals.first {
+                    completion(.success(recipe))
+                } else {
+                    completion(.failure(.emptyArray))
+                    return
+                }
+            } catch {
+                completion(.failure(.unableToDecode))
+            }
+        }.resume()
     }
 }
