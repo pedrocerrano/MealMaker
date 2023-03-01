@@ -17,13 +17,13 @@ enum NetworkError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidURL:
-            return "Invalid URL. Unable to reach the server."
+            return "Invalid URL. Check your endpoint."
         case .thrownError(let error):
             return "Thrown error: \(error.localizedDescription)"
         case .noData:
-            return "No data. The server responded with no data."
+            return "No data received from successful network fetch."
         case .unableToDecode:
-            return "Unrecognized data format. Unable to decode data."
+            return "Unable to decode model object from data."
         }
     }
 }
