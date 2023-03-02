@@ -16,7 +16,19 @@ class InstructionsVC: UIViewController {
     //MARK: - LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateUI()
     }
 
+    
+    //MARK: - PROPERTIES
+    var instructions: String?
+    
+    
+    
+    //MARK: - FUNCTIONS
+    func updateUI() {
+        guard let instructions = instructions else { return }
+        instructionsTextView.text = instructions
+    }
+    
 }

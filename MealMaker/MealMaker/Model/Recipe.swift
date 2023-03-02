@@ -38,6 +38,7 @@ struct Recipe: Decodable {
             let ingredientPair = "\($0.name): \($0.measurement)\n"
             result.append(ingredientPair)
         }
+        return result
     }
 }
 
@@ -69,7 +70,7 @@ extension Recipe {
                   let measurement = try? measurementNameContainer?.decode(String.self, forKey: MeasurementCodingKeys.allCases[$0.offset]),
                   !name.isEmpty,
                   !measurement.isEmpty
-            else { return }
+            else { return nil }
             
             return Ingredient(name: name, measurement: measurement)
         }
