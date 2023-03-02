@@ -151,6 +151,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N6f-dT-xNv"/>
+                    <connections>
+                        <outlet property="recipeAreaLabel" destination="iX2-QW-2I0" id="id9-Iv-WE5"/>
+                        <outlet property="recipeImageView" destination="CTr-Qx-FFq" id="lDN-RR-Etu"/>
+                        <outlet property="recipeInsructionsLabel" destination="35m-5i-fOr" id="lhT-I9-eLx"/>
+                        <outlet property="recipeNameLabel" destination="i8d-pm-5QH" id="0fp-EK-PxZ"/>
+                        <outlet property="recipeTableView" destination="Gy7-Ff-Krr" id="BSw-KO-8vI"/>
+                        <outlet property="recipeYouTubeLInkLabel" destination="tr3-jJ-7cx" id="cbk-9P-tuK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyt-PD-u9c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="8ec-76-K7Z">
@@ -189,6 +197,9 @@
                             <constraint firstItem="3q8-dx-CNy" firstAttribute="bottom" secondItem="unQ-Od-OHz" secondAttribute="bottom" constant="12" id="SOK-ui-Eau"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="instructionsTextView" destination="unQ-Od-OHz" id="Xfi-kL-cVN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jna-cg-TZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
